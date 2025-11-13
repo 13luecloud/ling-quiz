@@ -123,4 +123,16 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Aliases
+    |--------------------------------------------------------------------------
+    | Set classes' aliases here, usually for Tinker use.
+    |
+    */
+
+    'aliases' => [
+        'User' => env('AUTH_MODEL', App\User\Models\User::class),
+        'Language' => App\Language\Models\Language::class,
+    ],
 ];
