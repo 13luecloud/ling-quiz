@@ -1,16 +1,13 @@
 <?php
 
-namespace Database\Factories\User\Models;
+namespace Database\Factories;
 
-use App\User\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
 class UserFactory extends Factory
 {
-    protected $model = User::class;
-
     /**
      * Define the model's default state.
      *
