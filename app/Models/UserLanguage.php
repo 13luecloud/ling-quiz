@@ -1,13 +1,15 @@
 <?php
 
-namespace App\User\Models;
+namespace App\Models;
 
-use App\Language\Models\Language;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class UserLanguage extends Model
 {
+    use HasFactory;
+
     protected $table = 'user_target_languages';
 
     protected $guarded = ['id'];
